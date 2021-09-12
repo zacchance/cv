@@ -1,0 +1,289 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page
+
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+
+\renewcommand{\cvheadingfont}{\LARGE\color{Maroon}} % Font color of your name at the top
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Maroon, linkcolor=Maroon} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{Spring 2011} % Set the width of the date box in each block
+
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % Define a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{cv}{\spacedallcaps{Zachary Chance}}\vspace{1.5em} % Your name
+
+\noindent\spacedlowsmallcaps{Personal Information}\vspace{0.5em} % Personal information heading
+
+%\NewEntry{}{\textit{Born in United States of America,}}{18 October 1985} % Birthplace and date
+
+\NewEntry{email}{\href{mailto:zachary.chance@ll.mit.edu}{zachary.chance@ll.mit.edu}} % Email address
+
+%\NewEntry{website}{\href{http://www.johnsmith.com}{http://www.johnsmith.com}} % Personal website
+
+\NewEntry{phone}{(W) (781) 981 1993\ \ $\cdotp$\ \ (M) (317) 490 3852} % Phone number(s)
+
+%\vspace{1em} % Extra white space between the personal information section and goal
+
+%\noindent\spacedlowsmallcaps{Goal}\vspace{1em} % Goal heading, could be used for a quotation or short profile instead
+
+%\Description{Gain fundamental experience in my area of interest and expertise.}\vspace{2em} % Goal text
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\noindent\spacedlowsmallcaps{Work Experience}\vspace{1em}
+
+\NewEntry{2012--Present}{Technical Staff, \textsc{MIT Lincoln Laboratory}}
+
+\Description{\MarginText{MIT Lincoln Laboratory}$\cdotp$\ \ Led multiple working groups specializing in the development of algorithms for multisensor-multitarget tracking, mission planning, and target discrimination\newline\ \ $\cdotp$\ \ Oversaw several projects through fruition at the applied research level\newline\ \ $\cdotp$\ \ Developed and matured algorithms in the areas of radar waveform design, tracking, statistical inference, and mission planning\newline\ \ $\cdotp$\ \ Composed and delivered many presentations reporting the progress and concepts of ongoing work\\
+Reference: Sung-Hyun \textsc{Son}\ \ $\cdotp$\ \ (781) 981 0779\ \ $\cdotp$\ \ \href{mailto:sson@ll.mit.edu}{sson@ll.mit.edu}}
+
+%------------------------------------------------
+
+\NewEntry{2011-2012}{Research Assistant, \textsc{Purdue University}  --- West Lafayette}
+
+\Description{\MarginText{Purdue University}$\cdotp$\ \ Investigated the incorporation of noisy feedback information in physical-layer communications and proved its tangible utility\newline\ \ $\cdotp$\ \ Composed multiple technical articles in the area of feedback communications\newline\ \ $\cdotp$\ \ Collaborated with several other research assistants on theoretical development, testing, and technical documentation\newline\ \ $\cdotp$\ \ Studied the area of radar waveform design for imaging purposes and composed two conference papers on the subject\\ Reference: David \textsc{Love}\ \ $\cdotp$\ \ (765) 981 0779\ \ $\cdotp$\ \ \href{mailto:djlove@purdue.edu}{djlove@purdue.edu}}
+
+%------------------------------------------------
+
+\NewEntry{Fall 2011}{Student Intern, \textsc{MIT Lincoln Laboratory}}
+
+\Description{\MarginText{MIT Lincoln Laboratory}$\cdotp$\ \ Completed two studies on the optimal use of radar resources for the purposes of searching/tracking and the application of compressive sensing techniques to radar imaging\newline\ \ $\cdotp$\ \ Wrote technical articles for each corresponding project\newline\ \ $\cdotp$\ \ Constructed and presented final reports on the work\\ Reference: Sung-Hyun \textsc{Son}\ \ $\cdotp$\ \ (781) 981 0779\ \ $\cdotp$\ \ \href{mailto:sson@ll.mit.edu}{sson@ll.mit.edu}}
+
+%------------------------------------------------
+
+\NewEntry{Spring 2011}{Student Intern, \textsc{Naval Research Laboratory}  --- Washington, D.C.}
+
+\Description{\MarginText{Naval Research Laboratory}$\cdotp$\ \ Formulated the framework for the optimization of radar waveforms with the goal of imaging\newline\ \ $\cdotp$\ \ Built appropriate simulation environment to demonstrate the benefits of waveform optimization\newline\ \ $\cdotp$\ \ Composed a technical article and presented final report on the subject\\ Reference: Raghu G. \textsc{Raj}\ \ (202) 767 3662\ \ $\cdotp$\ \ \href{mailto:raghu.raj@nrl.navy.mil}{raghu.raj@nrl.navy.mil}}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Education}\vspace{1em}
+
+\NewEntry{2007-2012}{Purdue University, West Lafayette}
+
+\Description{\MarginText{Doctor of Philosophy}GPA: 3.91\ \ $\cdotp$ \ \ School of Electrical and Computer Engineering \newline
+Area of Concentration: \textit{Communications and Signal Processing}\newline
+Thesis: \textit{Harnessing the Benefits of Noisy Feedback}\newline
+Advisor: Prof.~David J. \textsc{Love}}
+
+%------------------------------------------------
+
+\NewEntry{2003-2007}{Purdue University, West Lafayette}
+
+\Description{\MarginText{Bachelor of Science}GPA: 3.92\ \ $\cdotp$ \ \ School of Electrical and Computer Engineering}
+
+%------------------------------------------------
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Publications}\vspace{1em}
+
+\NewEntry{Aug 2018}{\MarginText{Signal Processing, Sensor Fusion, and Target Recognition} Error statistics of bias-naive filtering in the presence of bias\newline
+Reference: \textit{Proceedings of Signal Processing, Sensor Fusion, and Target Recognition}, April 2018}
+
+\Description{Authors: Zachary \textsc{Chance}, ~Stephen \textsc{Relyea}, ~Evan \textsc{Anderson}}
+
+%------------------------------------------------
+
+\NewEntry{Dec 2017}{\MarginText{MITLL Technical Report} Consistent state estimation for very long-range radars\newline
+Reference: \textit{MIT Lincoln Laboratory Technical Report TR-1184}, December 2017}
+
+\Description{Authors: Jason \textsc{Cookson}, ~Zachary \textsc{Chance}, ~Leonardo \textsc{Urbano}}
+
+%------------------------------------------------
+
+\NewEntry{Aug 2015}{\MarginText{IEEE Transactions on Communications} Concatenated coding using linear schemes for Gaussian broadcast channels with noisy channel output feedback\newline
+Reference: \textit{IEEE Transactions on Communications}, vol. 63, no. 11, pgs. 4576-4590, November 2015}
+
+\Description{Authors: Ziad \textsc{Ahmad}, ~Zachary \textsc{Chance}, ~David J. \textsc{Love}, ~Chih-Chun \textsc{Wang}}
+
+%------------------------------------------------
+
+\NewEntry{Feb 2014}{\MarginText{MITLL Project Report} On the blind fusion of Bayesian classification information\newline
+Reference: \textit{MIT Lincoln Laboratory Project Report MD-40}, pgs. 1-33, December 2013}
+
+\Description{Authors: Zachary \textsc{Chance}, ~Lori \textsc{Layne}, ~Sung-Hyun \textsc{Son}}
+
+%------------------------------------------------
+
+\NewEntry{Dec 2013}{\MarginText{IEEE Transactions on Communications} Noncoherent trellis coded quantization: A practical limited feedback technique for massive MIMO systems\newline
+Reference: \textit{IEEE Transactions on Communications}, vol. 61, no. 12, pgs. 5016-5029, December 2013}
+
+\Description{Authors: Junil \textsc{Choi}, ~Zachary \textsc{Chance}, ~David J. \textsc{Love}, ~Upamanyu \textsc{Madhow}}
+
+%------------------------------------------------
+
+\NewEntry{Feb 2013}{\MarginText{ITA} Noncoherent trellis-coded quantization for massive MIMO limited feedback beamforming\newline
+Reference: \textit{Proceedings of Information Theory and Applications Workshop}, pgs. 1-6, February 2013}
+
+\Description{Authors: Junil \textsc{Choi}, ~Zachary \textsc{Chance}, ~David J. \textsc{Love}, ~Upamanyu \textsc{Madhow}}
+
+%------------------------------------------------
+
+\NewEntry{Aug 2012}{\MarginText{IEEE Transactions on Signal Processing} Using channel output feedback to increase throughput in hybrid-ARQ\newline
+Reference: \textit{IEEE Transactions on Signal Processing}, vol. 60, no. 12, pgs. 6465-6480, August 2012}
+
+\Description{Authors: Mayur \textsc{Agrawal}, ~Zachary \textsc{Chance}, ~David J. \textsc{Love}, ~Venkataramanan \textsc{Balakrishnan}}
+
+%------------------------------------------------
+
+\NewEntry{Nov 2011}{\MarginText{ACSSC} A sparse Bayesian approach to multistatic radar imaging\newline
+Reference: \textit{Proceedings of Asilomar Conference on Signals, Systems, and Computers}, pgs. 2107-2110, November 2011}
+
+\Description{Authors: Raghu G. \textsc{Raj}, ~Zachary \textsc{Chance}, ~David J. \textsc{Love}}
+
+%------------------------------------------------
+
+\NewEntry{Oct 2011}{\MarginText{IEEE Transactions on Information Theory} Concatenated coding for the AWGN Channel with noisy feedback\newline
+Reference: \textit{IEEE Transactions on Information Theory}, vol. 57, no. 10, pgs. 6633-6649, October 2011}
+
+\Description{Authors: Zachary \textsc{Chance}, ~David J. \textsc{Love}}
+
+%------------------------------------------------
+
+\NewEntry{May 2011}{\MarginText{IEEE Radar Conference} Information-theoretic structure of multistatic radar imaging\newline
+Reference: \textit{Proceedings of IEEE Radar Conference}, pgs. 853-858, May 2011}
+
+\Description{Authors: Zachary \textsc{Chance}, ~Raghu G. \textsc{Raj}, ~David J. \textsc{Love}}
+
+%------------------------------------------------
+\newpage
+\NewEntry{Mar 2010}{\MarginText{ICASSP} A noisy feedback encoding scheme for the Gaussian channel\newline
+Reference: \textit{Proceedings of IEEE International Conference on Acoustics, Speech, and Signal Processing}, pgs. 3482-3485, March 2010}
+
+\Description{Authors: Zachary \textsc{Chance}, ~David J. \textsc{Love}}
+
+%------------------------------------------------
+
+
+\vspace{1em} % Extra space between major sections
+
+%%----------------------------------------------------------------------------------------
+%%	COMPUTER SKILLS
+%%----------------------------------------------------------------------------------------
+%
+%\spacedlowsmallcaps{Computer Skills}\vspace{1em}
+%
+%\Description{\MarginText{Basic}\textsc{java}, Adobe Illustrator}
+%
+%\Description{\MarginText{Intermediate}\textsc{python}, \textsc{html}, \LaTeX, OpenOffice, Linux, Microsoft Windows}
+%
+%\Description{\MarginText{Advanced}Computer Hardware and Support}
+%
+%%------------------------------------------------
+%
+%\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\spacedlowsmallcaps{Other Information}\vspace{1em}
+
+\Description{\MarginText{Awards}2010, 2011, 2012\ \ $\cdotp$\ \ Frederic R. Muller Scholarship}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2007\ \ $\cdotp$\ \ Ross Fellowship}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2004\ \ $\cdotp$\ \ Schlumberger Scholarship}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2004\ \ $\cdotp$\ \ Tellkamp-Bostater-Lawrence-Power Scholarship}
+
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+
+\Description{2003\ \ $\cdotp$\ \ Mary Bryan Scholarship}
+
+%%------------------------------------------------
+%
+%\vspace{1em}
+%
+%\Description{\MarginText{Communication Skills}2010\ \ $\cdotp$\ \ Oral Presentation at the California Business Conference}
+%
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+%
+%\Description{2009\ \ $\cdotp$\ \ Poster at the Annual Business Conference in Oregon}
+%
+%%------------------------------------------------
+%
+%\vspace{1em}
+%
+%\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+%\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
+%
+%\Description{\MarginText{Languages}\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Mothertongue}
+%
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+%
+%\Description{\parbox{\langbox}{\textsc{Spanish}}\ \ $\cdotp$\ \ \ Intermediate (conversationally fluent)}
+%
+%\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+%
+%\Description{\parbox{\langbox}{\textsc{Dutch}}\ \ $\cdotp$\ \ \ Basic (simple words and phrases only)}
+%
+%\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
+%
+%%------------------------------------------------
+%
+%\Description{\MarginText{Interests}Piano\ \ $\cdotp$\ \ Cooking\ \ $\cdotp$\ \ Running\ \ $\cdotp$\ \ Chess\ \ $\cdotp$\ \ Dancing}
+%
+%%----------------------------------------------------------------------------------------
+
+\end{cv}
+
+\end{document} 
